@@ -1,5 +1,8 @@
+library(data.table)
+
 getwd()
 setwd("data")
 
-ex <- read.csv("example_g1e.csv")
-head(ex)
+dt <- fread("example_g1e.csv")
+
+fwrite(dt, "aa.csv")
